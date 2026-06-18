@@ -1,0 +1,33 @@
+.cards > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 24px;
+}
+
+.cards > ul > li {
+  background-color: var(--background-color);
+}
+
+.cards .cards-card-body {
+  margin: 8px;
+  text-align: center;
+}
+
+.cards .cards-card-image {
+  line-height: 0;
+}
+
+.cards > ul > li img {
+  width: 100%;
+  height: 150px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.cards-wrapper {
+  max-width: 1000px !important;
+}
+

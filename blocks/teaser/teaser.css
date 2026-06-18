@@ -1,0 +1,36 @@
+.teaser > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  grid-gap: 24px;
+}
+
+.teaser > ul > li {
+  border: 1px solid #dadada;
+  background-color: var(--background-color);
+}
+
+.teaser .teaser-card-body {
+  margin: 16px;
+}
+
+.teaser .teaser-card-image {
+  line-height: 0;
+}
+
+.teaser > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.teaser .button-container a.button{
+  background-color: transparent;
+  color: black;
+  border: 1px solid #047DBA;
+  font-weight: normal;
+  font-size: 14px;
+}
+   

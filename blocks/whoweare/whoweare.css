@@ -1,0 +1,35 @@
+.whoweare > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-gap: 24px;
+}
+
+.whoweare > ul > li {
+    border: 1px solid #dadada;
+    background-color: var(--background-color);
+}
+
+.whoweare .whoweare-card-body {
+    margin: 16px;
+}
+
+.whoweare .whoweare-card-image {
+    line-height: 0;
+}
+
+.whoweare > ul > li img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.whoweare .button-container a.button{
+    background-color: transparent;
+    color: black;
+    border: 1px solid #047DBA;
+    font-weight: normal;
+    font-size: 14px;
+}

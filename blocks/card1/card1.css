@@ -1,0 +1,27 @@
+.card1 > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  grid-gap: 24px;
+}
+
+.card1 > ul > li {
+  border: 1px solid #dadada;
+  background-color: var(--background-color);
+}
+
+.card1 .card1-card-body {
+  margin: 16px;
+}
+
+.card1 .card1-card-image {
+  line-height: 0;
+}
+
+.card1 > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}

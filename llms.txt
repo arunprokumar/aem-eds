@@ -1,8 +1,97 @@
-# MY DIGITAL BANK WEB SITE 
+# Digital Bank Website
 
-This website provides digital experience services.
+This website provides comprehensive digital banking services including credit cards, savings accounts, digital fixed deposits, and online banking solutions.
 
-## main Page 
+## Primary Pages (Priority 1)
 
+### Homepage - Main Entry Point
 https://main--aem-eds--arunprokumar.aem.live
+- Main landing page with overview of all services
+- Features hero content and key product offerings
+- Critical for brand authority and initial indexing
+
+### Product & Services Pages
+
+#### Credit Cards Section
+https://main--aem-eds--arunprokumar.aem.live/credit-cards
+- Explore range of Digital Bank Credit Cards
+- Important for financial services SEO
+- High user intent for banking customers
+
+#### Savings Account
+https://main--aem-eds--arunprokumar.aem.live/savings-account
+- Discover savings account options
+- Core product page for deposits and account management
+- Essential for financial comparison queries
+
+#### Digital Fixed Deposits (FD)
+https://main--aem-eds--arunprokumar.aem.live/fixed-deposits
+- Fixed tenure savings with guaranteed returns
+- Loan against FD facility information
+- Targets investment-focused audience
+
+#### Digital Banking Solutions
+https://main--aem-eds--arunprokumar.aem.live/digital-banking
+- Seamless money transfer capabilities
+- Bill payment and online transactions
+- Key for convenience-focused searches
+
+#### Health Insurance
+https://main--aem-eds--arunprokumar.aem.live/health-insurance
+- Health insurance plans and coverage
+- Medical emergency financial preparedness
+- Diversifies service offerings for indexing
+
+## Secondary Pages (Priority 2)
+
+### Blog & Educational Content
+https://main--aem-eds--arunprokumar.aem.live/blog
+- Savings Account Blogs collection
+- "Is a Saving Account Worth it?" - Financial literacy content
+- "How much cash can be deposited in Savings Account" - Compliance information
+- "Youth Finance: How to Set a Savings Goal" - Educational content
+- Important for long-tail queries and thought leadership
+
+## Company & Trust Pages (Priority 3)
+
+### About Us / Who We Are
+https://main--aem-eds--arunprokumar.aem.live/about
+- Company mission, vision, and values
+- Community commitment and diversity initiatives
+- Economic empowerment and sustainability focus
+- Builds brand authority and trust signals
+
+### Our Stories / Community Commitment
+https://main--aem-eds--arunprokumar.aem.live/stories
+- Company narratives and customer stories
+- Community impact and neighborhood support
+- Demonstrates corporate social responsibility
+
+## Support & Navigation Pages (Priority 4)
+
+### Site Map
+https://main--aem-eds--arunprokumar.aem.live/sitemap
+- Comprehensive site structure for crawlers
+- Helps AI index all available pages
+
+### Privacy Policy
+https://main--aem-eds--arunprokumar.aem.live/privacy-policy
+- Legal and trust building page
+- Important for data privacy concerns
+
+### Disclaimer
+https://main--aem-eds--arunprokumar.aem.live/disclaimer
+- Legal compliance and risk disclosure
+- Protects against liability claims
+
+## Recommended Additional Resources
+
+### robots.txt Configuration
+- Allow: / (permit all crawlers)
+- Sitemap: https://main--aem-eds--arunprokumar.aem.live/sitemap.xml
+
+### Meta Recommendations
+- Ensure all pages have unique, descriptive title tags
+- Add structured data (schema.org) for FinancialProduct, Organization types
+- Include natural language descriptions for each financial service
 

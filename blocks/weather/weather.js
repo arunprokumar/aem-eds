@@ -33,7 +33,7 @@ export default async function decorate(block) {
   try {
     let data;
     if (isLocalDev) {
-      const response = await fetch(`http://127.0.0.1:7676/api/weather?city=${encodeURIComponent(city)}`);
+      const response = await fetch(`http://127.0.0.1:3001/weather?city=${encodeURIComponent(city)}`);
       if (!response.ok) throw new Error(`Backend server responded with error: ${response.status}`);
       data = await response.json();
     } else {

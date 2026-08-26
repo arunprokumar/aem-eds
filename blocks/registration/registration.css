@@ -1,0 +1,86 @@
+.registration-wrapper {
+  max-width: 800px !important;
+}
+
+.registration-form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px;
+  border: 1px solid var(--light-color);
+  background-color: var(--background-color);
+}
+
+.registration-form-fields {
+  display: grid;
+  gap: 16px;
+}
+
+.registration-form label,
+.registration-form legend {
+  font-weight: 600;
+}
+
+.registration-form label:not(.registration-consent) {
+  display: grid;
+  gap: 6px;
+}
+
+.registration-form input:not([type='checkbox']) {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 10px;
+  border: 1px solid var(--dark-color);
+  font: inherit;
+}
+
+.registration-form fieldset {
+  display: grid;
+  gap: 8px;
+  padding: 0;
+  border: 0;
+}
+
+.registration-form fieldset label,
+.registration-consent {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  font-weight: 400;
+}
+
+.registration-form button {
+  min-height: 44px;
+  margin-top: 20px;
+  padding: 8px 20px;
+  border: 0;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.registration-form button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.registration-status {
+  min-height: 24px;
+  margin: 16px 0 0;
+}
+
+.registration-status.success {
+  color: #087443;
+}
+
+.registration-status.error {
+  color: #b42318;
+}
+
+@media (width >= 900px) {
+  .registration-form {
+    padding: 32px;
+  }
+}

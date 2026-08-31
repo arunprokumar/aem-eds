@@ -14,6 +14,14 @@ body[data-brand="luxury"] {
   color: #1f2937;
 }
 
+body[data-brand="luxury"] footer ul li {
+  color: #f8f4ff;
+}
+
+body[data-brand="luxury"] footer ul li a {
+  color: #f8f4ff;
+}
+
 body[data-brand="luxury"] a:any-link {
   color: #5b21b6;
 }
@@ -28,21 +36,6 @@ body[data-brand="luxury"] button:hover {
   background-color: #4c1d95;
 }
 
-body[data-brand="luxury"] header .nav-wrapper {
-  background: #fff;
-  border-bottom: 3px solid #6d28d9;
-}
-
-body[data-brand="luxury"] header nav .nav-hamburger button {
-  background: #f5f3ff;
-  color: #3b1d72;
-}
-
-body[data-brand="luxury"] header nav .nav-sections a:any-link,
-body[data-brand="luxury"] header nav .nav-brand a:any-link {
-  color: #3b1d72;
-}
-
 body[data-brand="luxury"] .cards > ul > li,
 body[data-brand="luxury"] .card1 > ul > li,
 body[data-brand="luxury"] .whoweare > ul > li,
@@ -52,22 +45,26 @@ body[data-brand="luxury"] .registration-form,
 body[data-brand="luxury"] .weather {
   background: #f8f4ff;
   border-color: #d8b4fe;
-  box-shadow: 0 10px 24px rgba(109, 40, 217, 0.12);
+  box-shadow: 0 10px 24px rgb(109 40 217 / 12%);
 }
 
 body[data-brand="luxury"] .hero {
-  background: linear-gradient(135deg, rgba(109, 40, 217, 0.94) 0%, rgba(168, 85, 247, 0.9) 100%);
+  background: linear-gradient(135deg, rgb(109 40 217 / 94%) 0%, rgb(168 85 247 / 90%) 100%);
   border-bottom: 4px solid #d8b4fe;
 }
 
 body[data-brand="luxury"] .hero h1 {
   color: #fff;
-  text-shadow: 0 2px 8px rgba(17, 24, 39, 0.45);
+  text-shadow: 0 2px 8px rgb(17 24 39 / 45%);
 }
 
 body[data-brand="luxury"] .hero .button-container .button {
   background: #fff;
   color: #3b1d72;
+}
+
+body[data-brand="luxury"] .article .button-container .button {
+  background: #6d28d9;
 }
 
 body[data-brand="luxury"] .hero .button-container .button:hover {
@@ -80,22 +77,31 @@ body[data-brand="luxury"] .weather-card {
   color: #fff;
 }
 
-body[data-brand="luxury"] .registration-form button,
-body[data-brand="luxury"] .article .button-container .button {
+body[data-brand="luxury"] header .nav-wrapper {
+  background: #fff;
+  border-bottom: 3px solid #6d28d9;
+}
+
+body[data-brand="luxury"] .registration-form button {
   background: #6d28d9;
 }
 
-body[data-brand="luxury"] .registration-form button:hover,
-body[data-brand="luxury"] .article .button-container .button:hover {
+body[data-brand="luxury"] header nav .nav-hamburger button {
+  background: #f5f3ff;
+  color: #3b1d72;
+}
+
+body[data-brand="luxury"] header nav .nav-brand a:any-link,
+body[data-brand="luxury"] header nav .nav-sections a:any-link {
+  color: #3b1d72;
+}
+
+body[data-brand="luxury"] .article .button-container .button:hover,
+body[data-brand="luxury"] .registration-form button:hover {
   background: #4c1d95;
 }
 
 body[data-brand="luxury"] footer,
 body[data-brand="luxury"] footer .footer {
   background: linear-gradient(180deg, #2b1745 0%, #4c1d95 100%);
-}
-
-body[data-brand="luxury"] footer ul li a,
-body[data-brand="luxury"] footer ul li {
-  color: #f8f4ff;
 }

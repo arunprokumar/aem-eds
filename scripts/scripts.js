@@ -77,11 +77,23 @@ async function loadEager(doc) {
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
   await loadBrandTheme();
+
+  const header = doc.querySelector('header');
+  const footer = doc.querySelector('footer');
+  const headerPromise = header ? loadHeader(header) : Promise.resolve();
+  const footerPromise = footer ? loadFooter(footer) : Promise.resolve();
+
   const main = doc.querySelector('main');
   if (main) {
     decorateMain(main);
     document.body.classList.add('appear');
-    await loadSection(main.querySelector('.section'), waitForFirstImage);
+    await Promise.all([
+      headerPromise,
+      footerPromise,
+      loadSection(main.querySelector('.section'), waitForFirstImage),
+    ]);
+  } else {
+    await Promise.all([headerPromise, footerPromise]);
   }
 
   sampleRUM.enhance();
@@ -107,9 +119,6 @@ async function loadLazy(doc) {
   const { hash } = window.location;
   const element = hash ? doc.getElementById(hash.substring(1)) : false;
   if (hash && element) element.scrollIntoView();
-
-  loadHeader(doc.querySelector('header'));
-  loadFooter(doc.querySelector('footer'));
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();

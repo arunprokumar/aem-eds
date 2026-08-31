@@ -80,6 +80,8 @@ export async function loadBrandTheme() {
   const brand = getBrandConfig();
   const cssHref = `${window.hlx.codeBasePath}/styles/${brand.css}`;
 
+  document.documentElement.dataset.brand = brand.slug;
+  document.documentElement.dataset.brandLabel = brand.label;
   document.body.dataset.brand = brand.slug;
   document.body.dataset.brandLabel = brand.label;
 

@@ -103,6 +103,15 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
   }
 }
 
+function normalizeNavLinks(fragment) {
+  fragment.querySelectorAll('a[href]').forEach((link) => {
+    const url = new URL(link.href, window.location.href);
+    if (url.hostname.endsWith('.aem.page')) {
+      link.href = `${url.pathname}${url.search}${url.hash}`;
+    }
+  });
+}
+
 /**
  * loads and decorates the header, mainly the nav
  * @param {Element} block The header block element
@@ -112,6 +121,7 @@ export default async function decorate(block) {
   const navMeta = getMetadata('nav');
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
   const fragment = await loadFragment(navPath);
+  normalizeNavLinks(fragment);
 
   // decorate nav DOM
   block.textContent = '';

@@ -13,6 +13,7 @@ import {
   loadCSS,
   sampleRUM,
 } from './aem.js';
+import { loadBrandTheme } from './brand.js';
 
 /**
  * Builds hero block and prepends to main in a new section.
@@ -75,6 +76,7 @@ export function decorateMain(main) {
 async function loadEager(doc) {
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
+  await loadBrandTheme();
   const main = doc.querySelector('main');
   if (main) {
     decorateMain(main);

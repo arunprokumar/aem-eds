@@ -1,0 +1,101 @@
+:root {
+  --brand-primary: #10b981;
+  --brand-primary-dark: #047857;
+  --brand-accent: #a78bfa;
+  --brand-surface: #f0fdf4;
+  --brand-text: #1f2937;
+  --brand-link: #047857;
+  --brand-button-bg: #10b981;
+  --brand-button-hover: #047857;
+}
+
+body[data-brand="wellness"] {
+  background: linear-gradient(180deg, #fff 0%, #f0fdf4 100%);
+  color: #1f2937;
+}
+
+body[data-brand="wellness"] a:any-link {
+  color: #047857;
+}
+
+body[data-brand="wellness"] a.button:any-link,
+body[data-brand="wellness"] button {
+  background-color: #10b981;
+}
+
+body[data-brand="wellness"] a.button:any-link:hover,
+body[data-brand="wellness"] button:hover {
+  background-color: #047857;
+}
+
+body[data-brand="wellness"] header .nav-wrapper {
+  background: #fff;
+  border-bottom: 3px solid #10b981;
+}
+
+body[data-brand="wellness"] header nav .nav-hamburger button {
+  background: #f0fdf4;
+  color: #047857;
+}
+
+body[data-brand="wellness"] header nav .nav-sections a:any-link,
+body[data-brand="wellness"] header nav .nav-brand a:any-link {
+  color: #047857;
+}
+
+body[data-brand="wellness"] .cards > ul > li,
+body[data-brand="wellness"] .card1 > ul > li,
+body[data-brand="wellness"] .whoweare > ul > li,
+body[data-brand="wellness"] .teaser > ul > li,
+body[data-brand="wellness"] .article.block,
+body[data-brand="wellness"] .registration-form,
+body[data-brand="wellness"] .weather {
+  background: #f0fdf4;
+  border-color: #86efac;
+  box-shadow: 0 10px 24px rgba(16, 185, 129, 0.12);
+}
+
+body[data-brand="wellness"] .hero {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.94) 0%, rgba(167, 139, 250, 0.9) 100%);
+  border-bottom: 4px solid #86efac;
+}
+
+body[data-brand="wellness"] .hero h1 {
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(17, 24, 39, 0.45);
+}
+
+body[data-brand="wellness"] .hero .button-container .button {
+  background: #fff;
+  color: #047857;
+}
+
+body[data-brand="wellness"] .hero .button-container .button:hover {
+  background: #f0fdf4;
+  color: #047857;
+}
+
+body[data-brand="wellness"] .weather-card {
+  background: linear-gradient(135deg, #10b981 0%, #a78bfa 100%);
+  color: #fff;
+}
+
+body[data-brand="wellness"] .registration-form button,
+body[data-brand="wellness"] .article .button-container .button {
+  background: #10b981;
+}
+
+body[data-brand="wellness"] .registration-form button:hover,
+body[data-brand="wellness"] .article .button-container .button:hover {
+  background: #047857;
+}
+
+body[data-brand="wellness"] footer,
+body[data-brand="wellness"] footer .footer {
+  background: linear-gradient(180deg, #022c22 0%, #047857 100%);
+}
+
+body[data-brand="wellness"] footer ul li a,
+body[data-brand="wellness"] footer ul li {
+  color: #f0fdf4;
+}

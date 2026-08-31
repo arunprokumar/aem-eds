@@ -1,0 +1,101 @@
+:root {
+  --brand-primary: #d93025;
+  --brand-primary-dark: #8b1e13;
+  --brand-accent: #f59e0b;
+  --brand-surface: #fff6ee;
+  --brand-text: #1f2937;
+  --brand-link: #a11d1d;
+  --brand-button-bg: #d93025;
+  --brand-button-hover: #8b1e13;
+}
+
+body[data-brand="retail"] {
+  background: linear-gradient(180deg, #fff 0%, #fff6ee 100%);
+  color: #1f2937;
+}
+
+body[data-brand="retail"] a:any-link {
+  color: #a11d1d;
+}
+
+body[data-brand="retail"] a.button:any-link,
+body[data-brand="retail"] button {
+  background-color: #d93025;
+}
+
+body[data-brand="retail"] a.button:any-link:hover,
+body[data-brand="retail"] button:hover {
+  background-color: #8b1e13;
+}
+
+body[data-brand="retail"] header .nav-wrapper {
+  background: #fff;
+  border-bottom: 3px solid #d93025;
+}
+
+body[data-brand="retail"] header nav .nav-hamburger button {
+  background: #fff6ee;
+  color: #8b1e13;
+}
+
+body[data-brand="retail"] header nav .nav-sections a:any-link,
+body[data-brand="retail"] header nav .nav-brand a:any-link {
+  color: #8b1e13;
+}
+
+body[data-brand="retail"] .cards > ul > li,
+body[data-brand="retail"] .card1 > ul > li,
+body[data-brand="retail"] .whoweare > ul > li,
+body[data-brand="retail"] .teaser > ul > li,
+body[data-brand="retail"] .article.block,
+body[data-brand="retail"] .registration-form,
+body[data-brand="retail"] .weather {
+  background: #fff6ee;
+  border-color: #f9c47a;
+  box-shadow: 0 10px 24px rgba(217, 48, 37, 0.12);
+}
+
+body[data-brand="retail"] .hero {
+  background: linear-gradient(135deg, rgba(217, 48, 37, 0.94) 0%, rgba(245, 158, 11, 0.9) 100%);
+  border-bottom: 4px solid #f9c47a;
+}
+
+body[data-brand="retail"] .hero h1 {
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(17, 24, 39, 0.45);
+}
+
+body[data-brand="retail"] .hero .button-container .button {
+  background: #fff;
+  color: #8b1e13;
+}
+
+body[data-brand="retail"] .hero .button-container .button:hover {
+  background: #fff6ee;
+  color: #8b1e13;
+}
+
+body[data-brand="retail"] .weather-card {
+  background: linear-gradient(135deg, #d93025 0%, #f59e0b 100%);
+  color: #fff;
+}
+
+body[data-brand="retail"] .registration-form button,
+body[data-brand="retail"] .article .button-container .button {
+  background: #d93025;
+}
+
+body[data-brand="retail"] .registration-form button:hover,
+body[data-brand="retail"] .article .button-container .button:hover {
+  background: #8b1e13;
+}
+
+body[data-brand="retail"] footer,
+body[data-brand="retail"] footer .footer {
+  background: linear-gradient(180deg, #5a120d 0%, #a11d1d 100%);
+}
+
+body[data-brand="retail"] footer ul li a,
+body[data-brand="retail"] footer ul li {
+  color: #fff6ee;
+}

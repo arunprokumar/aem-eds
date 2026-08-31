@@ -1,0 +1,101 @@
+:root {
+  --brand-primary: #0f4c81;
+  --brand-primary-dark: #0a2540;
+  --brand-accent: #2dd4bf;
+  --brand-surface: #eef7ff;
+  --brand-text: #111827;
+  --brand-link: #0f4c81;
+  --brand-button-bg: #0f4c81;
+  --brand-button-hover: #0a2540;
+}
+
+body[data-brand="digital"] {
+  background: linear-gradient(180deg, #fff 0%, #eef7ff 100%);
+  color: #111827;
+}
+
+body[data-brand="digital"] a:any-link {
+  color: #0f4c81;
+}
+
+body[data-brand="digital"] a.button:any-link,
+body[data-brand="digital"] button {
+  background-color: #0f4c81;
+}
+
+body[data-brand="digital"] a.button:any-link:hover,
+body[data-brand="digital"] button:hover {
+  background-color: #0a2540;
+}
+
+body[data-brand="digital"] header .nav-wrapper {
+  background: #fff;
+  border-bottom: 3px solid #0f4c81;
+}
+
+body[data-brand="digital"] header nav .nav-hamburger button {
+  background: #eef7ff;
+  color: #0a2540;
+}
+
+body[data-brand="digital"] header nav .nav-sections a:any-link,
+body[data-brand="digital"] header nav .nav-brand a:any-link {
+  color: #0a2540;
+}
+
+body[data-brand="digital"] .cards > ul > li,
+body[data-brand="digital"] .card1 > ul > li,
+body[data-brand="digital"] .whoweare > ul > li,
+body[data-brand="digital"] .teaser > ul > li,
+body[data-brand="digital"] .article.block,
+body[data-brand="digital"] .registration-form,
+body[data-brand="digital"] .weather {
+  background: #eef7ff;
+  border-color: #93c5fd;
+  box-shadow: 0 10px 24px rgba(15, 76, 129, 0.12);
+}
+
+body[data-brand="digital"] .hero {
+  background: linear-gradient(135deg, rgba(15, 76, 129, 0.94) 0%, rgba(45, 212, 191, 0.9) 100%);
+  border-bottom: 4px solid #93c5fd;
+}
+
+body[data-brand="digital"] .hero h1 {
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(17, 24, 39, 0.45);
+}
+
+body[data-brand="digital"] .hero .button-container .button {
+  background: #fff;
+  color: #0a2540;
+}
+
+body[data-brand="digital"] .hero .button-container .button:hover {
+  background: #eef7ff;
+  color: #0a2540;
+}
+
+body[data-brand="digital"] .weather-card {
+  background: linear-gradient(135deg, #0f4c81 0%, #2dd4bf 100%);
+  color: #fff;
+}
+
+body[data-brand="digital"] .registration-form button,
+body[data-brand="digital"] .article .button-container .button {
+  background: #0f4c81;
+}
+
+body[data-brand="digital"] .registration-form button:hover,
+body[data-brand="digital"] .article .button-container .button:hover {
+  background: #0a2540;
+}
+
+body[data-brand="digital"] footer,
+body[data-brand="digital"] footer .footer {
+  background: linear-gradient(180deg, #061926 0%, #0a2540 100%);
+}
+
+body[data-brand="digital"] footer ul li a,
+body[data-brand="digital"] footer ul li {
+  color: #eef7ff;
+}

@@ -1,0 +1,101 @@
+:root {
+  --brand-primary: #0f766e;
+  --brand-primary-dark: #134e4a;
+  --brand-accent: #fbbf24;
+  --brand-surface: #f0fdfa;
+  --brand-text: #1f2937;
+  --brand-link: #115e59;
+  --brand-button-bg: #0f766e;
+  --brand-button-hover: #134e4a;
+}
+
+body[data-brand="finance"] {
+  background: linear-gradient(180deg, #fff 0%, #f0fdfa 100%);
+  color: #1f2937;
+}
+
+body[data-brand="finance"] a:any-link {
+  color: #115e59;
+}
+
+body[data-brand="finance"] a.button:any-link,
+body[data-brand="finance"] button {
+  background-color: #0f766e;
+}
+
+body[data-brand="finance"] a.button:any-link:hover,
+body[data-brand="finance"] button:hover {
+  background-color: #134e4a;
+}
+
+body[data-brand="finance"] header .nav-wrapper {
+  background: #fff;
+  border-bottom: 3px solid #0f766e;
+}
+
+body[data-brand="finance"] header nav .nav-hamburger button {
+  background: #f0fdfa;
+  color: #134e4a;
+}
+
+body[data-brand="finance"] header nav .nav-sections a:any-link,
+body[data-brand="finance"] header nav .nav-brand a:any-link {
+  color: #134e4a;
+}
+
+body[data-brand="finance"] .cards > ul > li,
+body[data-brand="finance"] .card1 > ul > li,
+body[data-brand="finance"] .whoweare > ul > li,
+body[data-brand="finance"] .teaser > ul > li,
+body[data-brand="finance"] .article.block,
+body[data-brand="finance"] .registration-form,
+body[data-brand="finance"] .weather {
+  background: #f0fdfa;
+  border-color: #5eead4;
+  box-shadow: 0 10px 24px rgba(15, 118, 110, 0.12);
+}
+
+body[data-brand="finance"] .hero {
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.94) 0%, rgba(251, 191, 36, 0.9) 100%);
+  border-bottom: 4px solid #5eead4;
+}
+
+body[data-brand="finance"] .hero h1 {
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(17, 24, 39, 0.45);
+}
+
+body[data-brand="finance"] .hero .button-container .button {
+  background: #fff;
+  color: #134e4a;
+}
+
+body[data-brand="finance"] .hero .button-container .button:hover {
+  background: #f0fdfa;
+  color: #134e4a;
+}
+
+body[data-brand="finance"] .weather-card {
+  background: linear-gradient(135deg, #0f766e 0%, #fbbf24 100%);
+  color: #fff;
+}
+
+body[data-brand="finance"] .registration-form button,
+body[data-brand="finance"] .article .button-container .button {
+  background: #0f766e;
+}
+
+body[data-brand="finance"] .registration-form button:hover,
+body[data-brand="finance"] .article .button-container .button:hover {
+  background: #134e4a;
+}
+
+body[data-brand="finance"] footer,
+body[data-brand="finance"] footer .footer {
+  background: linear-gradient(180deg, #042f2e 0%, #115e59 100%);
+}
+
+body[data-brand="finance"] footer ul li a,
+body[data-brand="finance"] footer ul li {
+  color: #f0fdfa;
+}

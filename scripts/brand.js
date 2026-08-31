@@ -89,10 +89,15 @@ export async function loadBrandTheme() {
     const stylesheet = document.createElement('link');
     stylesheet.rel = 'stylesheet';
     stylesheet.href = cssHref;
+    stylesheet.media = 'print';
     document.head.appendChild(stylesheet);
-    await new Promise((resolve, reject) => {
-      stylesheet.onload = resolve;
-      stylesheet.onerror = reject;
-    });
+
+    stylesheet.addEventListener('load', () => {
+      stylesheet.media = 'all';
+    }, { once: true });
+
+    stylesheet.addEventListener('error', () => {
+      stylesheet.media = 'all';
+    }, { once: true });
   }
 }

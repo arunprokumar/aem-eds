@@ -9,7 +9,6 @@ import {
   decorateTemplateAndTheme,
   waitForFirstImage,
   loadSection,
-  loadSections,
   loadCSS,
   sampleRUM,
 } from './aem.js';
@@ -76,8 +75,8 @@ export function decorateMain(main) {
 async function loadEager(doc) {
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
-  await loadBrandTheme();
 
+  const brandThemePromise = loadBrandTheme();
   const header = doc.querySelector('header');
   const footer = doc.querySelector('footer');
   const headerPromise = header ? loadHeader(header) : Promise.resolve();
@@ -88,12 +87,13 @@ async function loadEager(doc) {
     decorateMain(main);
     document.body.classList.add('appear');
     await Promise.all([
+      brandThemePromise,
       headerPromise,
       footerPromise,
       loadSection(main.querySelector('.section'), waitForFirstImage),
     ]);
   } else {
-    await Promise.all([headerPromise, footerPromise]);
+    await Promise.all([brandThemePromise, headerPromise, footerPromise]);
   }
 
   sampleRUM.enhance();
@@ -114,7 +114,11 @@ async function loadEager(doc) {
  */
 async function loadLazy(doc) {
   const main = doc.querySelector('main');
-  await loadSections(main);
+  if (main) {
+    const sectionPromises = [...main.querySelectorAll('div.section')]
+      .map((section) => loadSection(section));
+    await Promise.all(sectionPromises);
+  }
 
   const { hash } = window.location;
   const element = hash ? doc.getElementById(hash.substring(1)) : false;
@@ -130,7 +134,7 @@ async function loadLazy(doc) {
  */
 function loadDelayed() {
   // eslint-disable-next-line import/no-cycle
-  window.setTimeout(() => import('./delayed.js'), 3000);
+  window.setTimeout(() => import('./delayed.js'), 1000);
   // load anything that can be postponed to the latest here
 }
 
